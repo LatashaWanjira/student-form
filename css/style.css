@@ -247,6 +247,10 @@ textarea.form-control:focus, input.form-control:focus, .chips:focus {
   height: 180%;
 }
 
+.border-bottom{
+	border-bottom: 1px solid white;
+}
+
 @media only screen and (max-width: 768px) {
   .prof-img {
     top: 18.5%;

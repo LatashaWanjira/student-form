@@ -1,147 +1,156 @@
 <!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<title>New Student</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> 
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
 
-	<head>
-		<meta charset="utf-8">
-		<title>New Student</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="css/materialize.min.css">
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-	</head>
+<body>
+<section class="container-fluid the-container p-5">
+  <div class="row the-row">
+    <div class="col-12 col-md-3 col-lg-4 col-xl-6 greet-img h-100">
+		<div class="logo-container mb-3 position-relative d-none">
+			<img src="css/img/white-logo.svg" height="100px" class="">
+		</div>
+      <div class="prof-img">
+		  <img src="css/img/white-logo.svg" height="100px" class="position-fixed">
+        <label class="the-img" for="my-picture" style="top: 120px;">
+        <div class="the-camera-icon"> <i data-feather="camera"></i>
+          <p class="text-capitalize">upload your picture</p>
+        </div>
+        </label>
+      </div>
+      <div class="greetings-img h-75"> <img src="css/img/bg.svg"> </div>
+    </div>
+    <div class="col-12 col-md-9 col-lg-8 col-xl-6 form-container">
+      <div class="title-container">
+        <h2 class="text-capitalize">Welcome aboard</h2>
+        <p class="paragraph">Hi! kindly fill in your cot=rrect details  into the form bellow
+        </p>
+        <div class="the-form p-md-5 px-5">
+          <form>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name" autofocus class="form-control">
+              </div>
+              <div class="col-12 col-md-4">
+                <label>Middle Name</label>
+                <input type="text" placeholder="Middle Name" class="form-control">
+              </div>
+              <div class="col-12 col-md-4">
+                <label>Surname</label>
+                <input type="text" placeholder="Surname" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <label>D.O.B</label>
+                <input type="date" placeholder="" class="form-control">
+              </div>
+              <div class="col-12 mb-3">
+				  
+				  <p>Select your gender</p>
+                <label>
+                  <input name="gender" type="radio"  />
+                  <span>Male</span> </label>
+                <label class="ml-5">
+                  <input name="gender" type="radio" />
+                  <span>Female</span> </label>
+              </div>
+              <div class="col-12 border-bottom mb-1">
+                <label>Nationality</label>
+                <input type="text" placeholder="Nationality" class="form-control">
+              </div>
+              <h4>Contact Details</h4>
+              <div class="row px-3">
+                <div class="col-12 col-md-4">
+                  <label>Postal Address</label>
+                  <input type="text" placeholder="Postal Address" class="form-control">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label>Code</label>
+                  <input type="text" placeholder="Code" class="form-control">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label>Town</label>
+                  <input type="text" placeholder="Town" class="form-control">
+                </div>
+              </div>
+              <div class="row px-3 col-12 pl-0 pr-0">
+                <div class="col-12 col-md-6">
+                  <label>Mobile Number</label>
+                  <input type="text" placeholder="Mobile Number" class="form-control">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label>Alternative Mobile Number</label>
+                  <input type="text" placeholder="Alternative Mobile Number" class="form-control">
+                </div>
+              </div>
+              <div class="col-12 border-bottom">
+                <label>Email Address</label>
+                <input type="email" placeholder="Email Address" class="form-control">
+              </div>
+              <h3>Parent's/Guardian's Details</h3>
+              <div class="col-12">
+                <label>Full Names</label>
+                <input type="text" placeholder="Full Names" class="form-control">
+              </div>
+              <div class="row px-3">
+                <div class="col-12 col-md-4">
+                  <label>Postal Address</label>
+                  <input type="text" placeholder="Postal Address" class="form-control">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label>Code</label>
+                  <input type="text" placeholder="Code" class="form-control">
+                </div>
+                <div class="col-12 col-md-4">
+                  <label>Town</label>
+                  <input type="text" placeholder="Town" class="form-control">
+                </div>
+              </div>
+              <div class="row px-3 col-12 pl-0 pr-0">
+                <div class="col-12 col-md-6">
+                  <label>Mobile Number</label>
+                  <input type="text" placeholder="Mobile Number" class="form-control">
+                </div>
+                <div class="col-12 col-md-6">
+                  <label>Alternative Mobile Number</label>
+                  <input type="text" placeholder="Alternative Mobile Number" class="form-control">
+                </div>
+              </div>
+              <div class="col-12">
+                <label>Email Address</label>
+                <input type="email" placeholder="Email Address" class="form-control">
+              </div>
+              <div class="col-12 mb-2">
+                <input type="file" id="my-picture" class="d-none">
+              </div>
+              <div class="col-12 d-flex flex-column mb-2 mt-3">
+                <button class="btn2">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<body>
-		<section class="container-fluid the-container p-5">
-			<div class="row the-row">
-				<div class="col-12 col-md-3 col-lg-4 col-xl-6 greet-img h-100">
-					<div class="prof-img">
-						<label class="the-img" for="my-picture">
-							<div class="the-camera-icon">
-								<i data-feather="camera"></i>
-								<p class="text-capitalize">upload your picture</p>
-							</div>
-						</label>
-					</div>
-					<div class="greetings-img h-75">
-						<img src="css/img/bg.svg">
-					</div>
-				</div>
-				<div class="col-12 col-md-9 col-lg-8 col-xl-6 form-container">
-					<div class="title-container">
-						<h2 class="text-capitalize">Welcome aboard</h2>
-						<!-- <p class="paragraph">Hi! We at Nouveta LTD would love to welcome you into the Veta family. With that being said, we would love to know some professional &amp; fun facts about you. Kindly fill the form below. Feel at home and welcome once again. -->
-						</p>
-						<div class="the-form p-md-5 px-5">
-							<form>
-								<div class="row">
-									<div class="col-12 col-md-4">
-										<label>First Name</label>
-										<input type="text" placeholder="First Name" autofocus class="form-control">
-									</div>
-									<div class="col-12 col-md-4">
-										<label>Middle Name</label>
-										<input type="text" placeholder="Middle Name" class="form-control">
-									</div>
-									<div class="col-12 col-md-4">
-										<label>Surname</label>
-										<input type="text" placeholder="Surname" class="form-control">
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-12">
-										<label>D.O.B</label>
-										<input type="date" placeholder="" class="form-control">
-									</div>
-									<div class="col-12">
-										<label>Nationality</label>
-										<input type="text" placeholder="Nationality" class="form-control">
-									</div>
-									<h4>Contact Details</h4>
-									<div class="row px-3">
-										<div class="col-12 col-md-4">
-											<label>Postal Address</label>
-											<input type="text" placeholder="Postal Address" class="form-control">
-										</div>
-										<div class="col-12 col-md-4">
-											<label>Code</label>
-											<input type="text" placeholder="Code" class="form-control">
-										</div>
-										<div class="col-12 col-md-4">
-											<label>Town</label>
-											<input type="text" placeholder="Town" class="form-control">
-										</div>
-									</div>
-									<div class="row px-3">
-										<div class="col-12 col-md-6">
-											<label>Mobile Number</label>
-											<input type="text" placeholder="Mobile Number" class="form-control">
-										</div>
-										<div class="col-12 col-md-6">
-											<label>Alternative Mobile Number</label>
-											<input type="text" placeholder="Alternative Mobile Number" class="form-control">
-										</div>
-									</div>
-									<div class="col-12">
-										<label>Email Address</label>
-										<input type="email" placeholder="Email Address" class="form-control">
-									</div>
-									<h3>Parent's/Guardian's Details</h3>
-									<div class="col-12">
-										<label>Full Names</label>
-										<input type="text" placeholder="Full Names" class="form-control">
-									</div>
-									<div class="row px-3">
-										<div class="col-12 col-md-4">
-											<label>Postal Address</label>
-											<input type="text" placeholder="Postal Address" class="form-control">
-										</div>
-										<div class="col-12 col-md-4">
-											<label>Code</label>
-											<input type="text" placeholder="Code" class="form-control">
-										</div>
-										<div class="col-12 col-md-4">
-											<label>Town</label>
-											<input type="text" placeholder="Town" class="form-control">
-										</div>
-									</div>
-									<div class="row px-3">
-										<div class="col-12 col-md-6">
-											<label>Mobile Number</label>
-											<input type="text" placeholder="Mobile Number" class="form-control">
-										</div>
-										<div class="col-12 col-md-6">
-											<label>Alternative Mobile Number</label>
-											<input type="text" placeholder="Alternative Mobile Number" class="form-control">
-										</div>
-									</div>
-									<div class="col-12">
-										<label>Email Address</label>
-										<input type="email" placeholder="Email Address" class="form-control">
-									</div>
-									<div class="col-12 mb-2">
-										<input type="file" id="my-picture" class="d-none">
-									</div>
-									<div class="col-12 d-flex flex-column mb-2 mt-3">
-										<button class="btn2">SUBMIT</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+<!--	script--> 
 
-		<!--	script-->
-
-
-		<script>
+<script>
 			feather.replace()
 			$('.chips').chips();
 			$('.chips-placeholder-skills').chips({
@@ -152,8 +161,7 @@
 				placeholder: 'Enter a hobby',
 				secondaryPlaceholder: '+ Hobby',
 			});
-		</script>
-		<!--	script-->
-	</body>
-
+		</script> 
+<!--	script-->
+</body>
 </html>
