@@ -203,7 +203,7 @@ textarea.form-control:focus, input.form-control:focus, .chips:focus {
   border-style: none;
   height: 110%;
   position: fixed;
-  left: -5%;
+  left: 0%;
   top: 1%;
 }
 
@@ -249,6 +249,24 @@ textarea.form-control:focus, input.form-control:focus, .chips:focus {
 
 .border-bottom{
 	border-bottom: 1px solid white;
+}
+#prof-picture{
+	height:auto;
+	
+	display: none;
+	width: 100%;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #242489;
+}
+
+[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after, [type="radio"]:checked+span:before, [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border-radius: 50%;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #242489 !important;
 }
 
 @media only screen and (max-width: 768px) {

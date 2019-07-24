@@ -20,11 +20,13 @@
   <div class="row the-row">
     <div class="col-12 col-md-3 col-lg-4 col-xl-6 greet-img h-100">
 		<div class="logo-container mb-3 position-relative d-none">
-			<img src="css/img/white-logo.svg" height="100px" class="">
+			<img src="css/img/white-logo.svg" height="200px" class="">
 		</div>
       <div class="prof-img">
-		  <img src="css/img/white-logo.svg" height="100px" class="position-fixed">
-        <label class="the-img" for="my-picture" style="top: 120px;">
+		  <img src="css/img/white-logo.svg" height="160px" class="position-fixed" style="top: 0px;">
+		  
+        <label class="the-img" for="my-picture" style="top: 80px;">
+			 <img src="#" id="prof-picture" class="">
         <div class="the-camera-icon"> <i data-feather="camera"></i>
           <p class="text-capitalize">upload your picture</p>
         </div>
@@ -135,7 +137,7 @@
                 <input type="email" placeholder="Email Address" class="form-control">
               </div>
               <div class="col-12 mb-2">
-                <input type="file" id="my-picture" class="d-none">
+                <input type="file" id="my-picture" class="d-none" onChange="showimage.call(this)" accept="image/gif, image/jpeg, image/png">
               </div>
               <div class="col-12 d-flex flex-column mb-2 mt-3">
                 <button class="btn2">SUBMIT</button>
@@ -163,5 +165,22 @@
 			});
 		</script> 
 <!--	script-->
+	
+<!--	uploaded image-->
+	<script>
+function showimage(){
+if(this.files && this.files[0]){
+var obj=new FileReader();
+obj.onload=function(data){
+var image=document.getElementById("prof-picture");
+image.src=data.target.result;
+	image.style.display="block";
+}
+obj.readAsDataURL(this.files[0]);
+}
+}
+
+</script>
+<!--	upload image-->
 </body>
 </html>
